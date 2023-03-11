@@ -27,10 +27,10 @@
                 <h3 class="home-page-text">Le Quai Antique, installé à Chambéry, propose au déjeuner comme au dîner </br>une
                     expérience gastronomique, à travers une cuisine sans artifice.
                 </h3>
-                <a class="link">Découvrir</a>
+                <a href="#display"class="link">Découvrir</a>
             </div>
 
-            <div class="display">
+            <div id="display" class="display">
                 <div class="meal-display">
                     <div id="meal-1" class="meal-picture">Crevettes</div>
                     <div id="meal-2" class="meal-picture">Saumon</div>
@@ -39,7 +39,11 @@
                     <div id="meal-5" class="meal-picture">Soupe au poisson</div>
                     <div id="meal-6" class="meal-picture">Pâtes carbonara</div>
                 </div>
-                <a class="link">Réserver une table</a>
+                <div class="button-container">
+                    <button type="submit" class="reservation-btn link" onclick="openPopup()">Réserver une table</button>
+                    <div class="popup" id="popup"></div>
+                </div>
+                
             </div>
 
             <div class="menus-display">
@@ -135,5 +139,6 @@
                 </div>
             </footer>
         </main>
-    </body>
+        <script type="text/javascript" src="qa-script.js"></script>
+    </body>   
 </html>

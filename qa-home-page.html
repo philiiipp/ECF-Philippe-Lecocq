@@ -40,8 +40,35 @@
                     <div id="meal-6" class="meal-picture">Pâtes carbonara</div>
                 </div>
                 <div class="button-container">
-                    <button type="submit" class="reservation-btn link" onclick="openPopup()">Réserver une table</button>
-                    <div class="popup" id="popup"></div>
+                    <button type="submit" class="link" onclick="openPopup()">Réserver une table</button>
+                    <div class="popup" id="popup">
+                        <div class="reservation-form-container">
+                            <button class="close-popup-btn" onclick="closePopup()"><i class="bi bi-x-circle-fill"></i></button>
+                            <div class="form-title">
+                                <img class="form-logo"src="../ECF-Philippe-Lecocq/images-quai-antique/logo-qa-noir.png">
+                                <p>Merci de préciser en commentaire le nombre d’enfants présent à table (s’il y en a).
+                                    Pour tout retard de plus de 20 minutes votre table sera donnée à un autre client.</p>
+                            </div>      
+                            <form method="get" action="">
+                                <div class="reservation-layout">
+                                    <div class="reservation-box-1">
+                                        <div>
+                                            <label for="nombre-de-convives"><i class="bi bi-people-fill"></i></label>
+                                            <input class="reservation-form-bar" type="number" id="nombre-de-convives" name="nombre-de-convives" min="1" max="8" required>
+                                        </div>
+                                        <div>
+                                            <label for="date-reservation"><i class="bi bi-calendar"></i></label>
+                                            <input class="reservation-form-bar"type="date" id="date-reservation" name="date-reservation" required>
+                                        </div>                          
+                                    </div>
+                                    <div class="grey-line"></div>                                    
+                                </div>
+                                <div class="form-submit-box">
+                                    <input class="form-submit" type="submit" value="Continuer">
+                                </div>            
+                            </form>
+                        </div>     
+                    </div>
                 </div>
                 
             </div>

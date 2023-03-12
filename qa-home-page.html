@@ -51,17 +51,34 @@
                             </div>      
                             <form method="get" action="">
                                 <div class="reservation-layout">
-                                    <div class="reservation-box-1">
+                                    <div class="reservation-box">
                                         <div>
                                             <label for="nombre-de-convives"><i class="bi bi-people-fill"></i></label>
-                                            <input class="reservation-form-bar" type="number" id="nombre-de-convives" name="nombre-de-convives" min="1" max="8" required>
+                                            <input class="reservation-form-bar" type="number" id="nombre-de-convives" name="nombre-de-convives" min="1" max="8" placeholder="Nombre de convives" required>
                                         </div>
                                         <div>
                                             <label for="date-reservation"><i class="bi bi-calendar"></i></label>
                                             <input class="reservation-form-bar"type="date" id="date-reservation" name="date-reservation" required>
-                                        </div>                          
+                                        </div>
                                     </div>
-                                    <div class="grey-line"></div>                                    
+                                    <div class="grey-line"></div>
+                                    <div class="reservation-box">
+                                        <div>
+                                            <p>MIDI :</p>
+                                            <input class="reservation-form-bar" type="time" id="morning-time" name="morning-time" min="12:00" max="13:00" required>
+                                        </div>
+                                        <div>
+                                            <p>SOIR :</p>
+                                            <input class="reservation-form-bar" type="time" id="night-time" name="night-time" min="19:00" max="22:00" required>
+                                        </div>
+                                    </div>
+                                    <div class="grey-line"></div>
+                                    <div class="form-comments">
+                                        <label for="allergies">Allergies :</label>
+                                        <input class="form-grey-bar"type="text" id="allergies" name="allergies" placeholder="Spécifiez vos allergies...">
+                                        <label for="allergies">Commentaires :</label>
+                                        <input class="big-grey-bar"type="text" id="comments" name="comments"  placeholder="Ecrivez vos commentaires ici...">
+                                    </div>
                                 </div>
                                 <div class="form-submit-box">
                                     <input class="form-submit" type="submit" value="Continuer">

@@ -21,7 +21,7 @@
                 <img class="form-logo"src="./images-quai-antique/logo-qa-noir.png">
                 <p>Inscrivez-vous pour continuer</p>
             </div>      
-            <form method="get" action="">
+            <form method="post" action="insertion.php">
                 <div class="form-layout">
                     <input class="form-grey-bar" type="email" id="email" name="email" placeholder="Saisissez votre adresse e-mail" required>
                     <input class="form-grey-bar" type="password" id="password" name="password" placeholder="Saisissez votre mot de passe" required>

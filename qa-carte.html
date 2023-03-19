@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@500&family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">   
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>La carte | Le Quai Antique</title>
         <link rel="stylesheet" href="qa-style.css">
     </head>
@@ -18,6 +18,13 @@
                 <a href="./qa-carte.html#entr%C3%A9e"><h3>La carte</h3></a>
                 <a href="./qa-log-in-form.html"><h3>Se connecter</h3></a>
                 <a href="./qa-sign-in-form.html"><h3 class="sign-in-link">S'inscrire</h3></a>
+            </div>
+            <button class="header-mobile" onclick="openHeaderPopup()"><i class="bi bi-list"></i></button>
+            <div id="header-popup"class="header-popup">
+                <a href="./qa-carte.html#entr%C3%A9e"><h3>La carte</h3></a>
+                <a href="./qa-log-in-form.html"><h3>Se connecter</h3></a>
+                <a href="./qa-sign-in-form.html"><h3 class="sign-in-link">S'inscrire</h3></a>
+                <button onclick="closeHeaderPopup()"><h3 style="color: grey">Fermer</h3></button>
             </div>
         </header>
 
